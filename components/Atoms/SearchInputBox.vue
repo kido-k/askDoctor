@@ -11,6 +11,6 @@
 .search {
   display: inline-block;
   height: 40px;
-  width: 592px;
+  width: 492px;
 }
 </style>

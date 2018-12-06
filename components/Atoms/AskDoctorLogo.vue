@@ -11,6 +11,5 @@
 <style>
 .Logo {
   display: inline-block;
-  height: 42px;
 }
 </style>

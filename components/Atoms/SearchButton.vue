@@ -1,7 +1,6 @@
 <template>
   <div class = "searchBtn">
     <button
-      id="button-addon2"
       class="btn btn-outline-secondary"
       type="button"
     >
