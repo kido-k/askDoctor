@@ -29,9 +29,11 @@ export default {
   min-width: 930px;
   display: flex;
   align-items: flex-end;
-  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-bottom: 18px;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   border-color: #dce1e1;
+  justify-content: center;
 }
 </style>

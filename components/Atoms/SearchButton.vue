@@ -15,7 +15,7 @@
   display: inline-block;
   font-size: 16px;
   height: 40px;
-  width: 88px;
+  width: 78px;
   padding: 0;
   margin: 0;
 }
