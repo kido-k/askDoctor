@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
+      <AskDoctor/>
       <h1 class="title">
         ask-caremanager
       </h1>
@@ -23,17 +23,16 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import AskDoctor from '~/components/atoms/AskDoctorLogo.vue'
 
 export default {
   components: {
-    Logo
+    AskDoctor
   }
 }
 </script>
 
 <style>
-
 .container {
   min-height: 100vh;
   display: flex;
