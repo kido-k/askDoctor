@@ -2,32 +2,20 @@
   <section class="container">
     <div>
       <AskDoctor/>
-      <h1 class="title">
-        ask-caremanager
-      </h1>
-      <h2 class="subtitle">
-        My great Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
-      </div>
+      <SearchComponent/>
+      <p class="oi oi-magnifying-glass"/>
     </div>
   </section>
 </template>
 
 <script>
 import AskDoctor from '~/components/atoms/AskDoctorLogo.vue'
+import SearchComponent from '~/components/Molecules/SearchComponent.vue'
 
 export default {
   components: {
-    AskDoctor
+    AskDoctor,
+    SearchComponent
   }
 }
 </script>
