@@ -8,6 +8,9 @@
         <CatchCopy/>
         <GuideSignUp/>
       </div>
+      <div class="middlecontent">
+        <MiddleTitle/>
+      </div>
     </div>
   </section>
 </template>
@@ -16,16 +19,21 @@
 import Header from '~/components/Organisms/TheHeader.vue'
 import CatchCopy from '~/components/Atoms/CatchCopy.vue'
 import GuideSignUp from '~/components/Molecules/GuideSignUp.vue'
+import MiddleTitle from '~/components/Organisms/TheMiddleTitle.vue'
 export default {
   components: {
     Header,
     CatchCopy,
-    GuideSignUp
+    GuideSignUp,
+    MiddleTitle
   }
 }
 </script>
 
 <style>
+.header {
+  width: 100%;
+}
 .container {
   width: 100%;
   height: 100%;
@@ -33,7 +41,9 @@ export default {
   padding: 0px;
   text-align: center;
 }
-.header {
-  width: 100%;
+.middlecontent {
+  background-color: #f0fafa;
+  margin: 40px 0 0 0;
+  padding: 40px 0;
 }
 </style>
