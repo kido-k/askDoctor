@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container">
+    <div class="searchComponent">
       <SearchInputBox/>
       <SearchButton/>
     </div>
@@ -8,7 +8,7 @@
 </template>
 
 <style>
-.container {
+.searchComponent {
   display: flex;
 }
 </style>

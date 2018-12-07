@@ -9,9 +9,9 @@
 
 <style scoped>
 .catchCopy {
-  display: inline-block;
+  display: block;
 }
 .catchCopyImage {
-  width: 120%;
+  width: 100%;
 }
 </style>

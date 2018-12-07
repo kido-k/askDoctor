@@ -6,6 +6,7 @@
     <div class="main">
       <div class="content1">
         <CatchCopy/>
+        <GuideSignUp/>
       </div>
     </div>
   </section>
@@ -14,10 +15,12 @@
 <script>
 import Header from '~/components/Organisms/TheHeader.vue'
 import CatchCopy from '~/components/Atoms/CatchCopy.vue'
+import GuideSignUp from '~/components/Molecules/GuideSignUp.vue'
 export default {
   components: {
     Header,
-    CatchCopy
+    CatchCopy,
+    GuideSignUp
   }
 }
 </script>
