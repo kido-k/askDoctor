@@ -2,7 +2,7 @@
   <div class="example">
     <img
       class="exampleImage"
-      src="../../assets/MiddlePicture2_example.jpg"
+      src="../../assets/MiddlePicture2_example.png"
       alt="catchCopy">
   </div>
 </template>

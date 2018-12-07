@@ -2,7 +2,7 @@
   <div class="chat">
     <img
       class="chatImage"
-      src="../../assets/MiddlePicture1_chat.jpg"
+      src="../../assets/MiddlePicture1_chat.png"
       alt="chatImage">
   </div>
 </template>
