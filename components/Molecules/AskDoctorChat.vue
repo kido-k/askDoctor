@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="midle-title">
+    <div class="middle-title">
       <MidleTitle/>
       <MidleLabel class="label"/>
       <MidlePicture/>
@@ -9,7 +9,7 @@
 </template>
 
 <style scoped>
-.midle-title {
+.middle-title {
   display: inline-block;
   background-repeat: no-repeat;
 }

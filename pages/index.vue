@@ -11,6 +11,9 @@
       <div class="middlecontent">
         <MiddleTitle/>
       </div>
+      <div class="pdca">
+        <ThePDCAList/>
+      </div>
     </div>
   </section>
 </template>
@@ -20,12 +23,14 @@ import Header from '~/components/Organisms/TheHeader.vue'
 import CatchCopy from '~/components/Atoms/CatchCopy.vue'
 import GuideSignUp from '~/components/Molecules/GuideSignUp.vue'
 import MiddleTitle from '~/components/Organisms/TheMiddleTitle.vue'
+import ThePDCAList from '~/components/Organisms/ThePDCAList.vue'
 export default {
   components: {
     Header,
     CatchCopy,
     GuideSignUp,
-    MiddleTitle
+    MiddleTitle,
+    ThePDCAList
   }
 }
 </script>
@@ -45,5 +50,8 @@ export default {
   background-color: #f0fafa;
   margin: 40px 0 0 0;
   padding: 40px 0;
+}
+.pdca {
+  margin: 40px 0 0 0;
 }
 </style>
