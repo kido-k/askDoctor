@@ -23,6 +23,9 @@
       <div class="ask-category">
         <AskCategory/>
       </div>
+      <div class="">
+        <Footer/>
+      </div>
     </div>
   </section>
 </template>
@@ -36,6 +39,7 @@ import PDCAList from '~/components/Organisms/ThePDCAList.vue'
 import FeatureWord from '~/components/Organisms/TheFeatureWord.vue'
 import FeatureConsult from '~/components/Organisms/TheFeatureConsult.vue'
 import AskCategory from '~/components/Organisms/TheAskCategory.vue'
+import Footer from '~/components/Organisms/TheFooter.vue'
 
 export default {
   components: {
@@ -46,7 +50,8 @@ export default {
     PDCAList,
     FeatureWord,
     FeatureConsult,
-    AskCategory
+    AskCategory,
+    Footer
   }
 }
 </script>
