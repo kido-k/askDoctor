@@ -20,6 +20,9 @@
       <div class="feature-consult">
         <FeatureConsult/>
       </div>
+      <div class="ask-category">
+        <AskCategory/>
+      </div>
     </div>
   </section>
 </template>
@@ -32,6 +35,7 @@ import MiddleTitle from '~/components/Organisms/TheMiddleTitle.vue'
 import PDCAList from '~/components/Organisms/ThePDCAList.vue'
 import FeatureWord from '~/components/Organisms/TheFeatureWord.vue'
 import FeatureConsult from '~/components/Organisms/TheFeatureConsult.vue'
+import AskCategory from '~/components/Organisms/TheAskCategory.vue'
 
 export default {
   components: {
@@ -41,7 +45,8 @@ export default {
     MiddleTitle,
     PDCAList,
     FeatureWord,
-    FeatureConsult
+    FeatureConsult,
+    AskCategory
   }
 }
 </script>
@@ -71,5 +76,9 @@ export default {
 .feature-consult {
   padding: 30px 0 0 0;
   margin: 0 0 0 0;
+}
+.ask-category {
+  margin: 0px;
+  padding: 0px;
 }
 </style>
