@@ -12,10 +12,13 @@
         <MiddleTitle/>
       </div>
       <div class="pdca">
-        <ThePDCAList/>
+        <PDCAList/>
       </div>
       <div class="feature-word">
-        <TheFeatureWord/>
+        <FeatureWord/>
+      </div>
+      <div class="feature-consult">
+        <FeatureConsult/>
       </div>
     </div>
   </section>
@@ -26,8 +29,9 @@ import Header from '~/components/Organisms/TheHeader.vue'
 import CatchCopy from '~/components/Atoms/CatchCopy.vue'
 import GuideSignUp from '~/components/Molecules/GuideSignUp.vue'
 import MiddleTitle from '~/components/Organisms/TheMiddleTitle.vue'
-import ThePDCAList from '~/components/Organisms/ThePDCAList.vue'
-import TheFeatureWord from '~/components/Organisms/TheFeatureWord.vue'
+import PDCAList from '~/components/Organisms/ThePDCAList.vue'
+import FeatureWord from '~/components/Organisms/TheFeatureWord.vue'
+import FeatureConsult from '~/components/Organisms/TheFeatureConsult.vue'
 
 export default {
   components: {
@@ -35,8 +39,9 @@ export default {
     CatchCopy,
     GuideSignUp,
     MiddleTitle,
-    ThePDCAList,
-    TheFeatureWord
+    PDCAList,
+    FeatureWord,
+    FeatureConsult
   }
 }
 </script>
@@ -60,6 +65,10 @@ export default {
   margin: 40px 0 0 0;
 }
 .feature-word {
+  padding: 30px 0 0 0;
+  margin: 0 0 0 0;
+}
+.feature-consult {
   padding: 30px 0 0 0;
   margin: 0 0 0 0;
 }
