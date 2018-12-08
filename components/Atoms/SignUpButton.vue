@@ -1,7 +1,7 @@
 <template>
   <div class = "signUpBtn">
     <button
-      class="btn btn-outline-secondary"
+      class="btn btn-danger"
       type="button"
     >
       今すぐ利用登録
