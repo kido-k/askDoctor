@@ -36,16 +36,8 @@ export default {
   background-repeat: no-repeat;
 }
 .signup-btn {
+  min-width: 1040px;
+  max-width: 1040px;
   margin: 40px 0 0 0;
 }
-/* .left-component {
-  text-align: center;
-  width: 49%;
-  margin: 0 2% 0 0;
-}
-.right-component {
-  text-align: center;
-  width: 49%;
-  margin: 0;
-} */
 </style>

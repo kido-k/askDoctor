@@ -14,6 +14,9 @@
       <div class="pdca">
         <ThePDCAList/>
       </div>
+      <div class="feature-word">
+        <TheFeatureWord/>
+      </div>
     </div>
   </section>
 </template>
@@ -24,27 +27,29 @@ import CatchCopy from '~/components/Atoms/CatchCopy.vue'
 import GuideSignUp from '~/components/Molecules/GuideSignUp.vue'
 import MiddleTitle from '~/components/Organisms/TheMiddleTitle.vue'
 import ThePDCAList from '~/components/Organisms/ThePDCAList.vue'
+import TheFeatureWord from '~/components/Organisms/TheFeatureWord.vue'
+
 export default {
   components: {
     Header,
     CatchCopy,
     GuideSignUp,
     MiddleTitle,
-    ThePDCAList
+    ThePDCAList,
+    TheFeatureWord
   }
 }
 </script>
 
 <style>
-.header {
-  width: 100%;
-}
 .container {
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
   margin: 0px;
   padding: 0px;
   text-align: center;
+}
+.header {
+  /* width: 100%; */
 }
 .middlecontent {
   background-color: #f0fafa;
@@ -53,5 +58,9 @@ export default {
 }
 .pdca {
   margin: 40px 0 0 0;
+}
+.feature-word {
+  padding: 30px 0 0 0;
+  margin: 0 0 0 0;
 }
 </style>
