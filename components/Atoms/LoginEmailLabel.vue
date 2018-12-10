@@ -1,18 +1,18 @@
 <template>
   <div class="label">
-    <p>最短5分で、複数の医師から回答がもらえます。</p>
+    <label for="exampleInputEmail1">メールアドレス</label>
   </div>
 </template>
 
 <style scoped>
 .label {
   display: block;
+  padding: 0;
   margin: 0;
-  width: 100%;
 }
-.label > p {
+.label > label {
   font-size: 18px;
-  margin: 0;
-  text-align: left;
+  /* padding: 0; */
+  /* margin: 0; */
 }
 </style>

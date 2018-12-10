@@ -1,17 +1,17 @@
 <template>
-  <div class="MiddleTitle1">
+  <div class="title">
     <p>24時間365日<br>
       医師に相談できます</p>
   </div>
 </template>
 
-<style>
-.MiddleTitle1 {
+<style scoped>
+.title {
   display: block;
   margin: 0;
   width: 100%;
 }
-.MiddleTitle1 > p {
+.title > p {
   font-size: 36px;
   margin: 0;
 }
