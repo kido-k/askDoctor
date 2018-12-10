@@ -1,30 +1,29 @@
 <template>
-  <div class = "menuBtn">
-    <button
-      class="btn btn-outline-secondary non-border"
-      type="button"
-    >
+  <div class = "loginBtn">
+    <a
+      href="/login"
+      class="icon "
+      role="button"
+      aria-pressed="true">
       <ion-icon
         size="large"
-        name="menu"/><br>
-      <p class="text">メニュー</p>
-    </button>
+        name="lock"
+      /><br>
+      ログイン
+    </a>
   </div>
 </template>
 
-<style>
-.menuBtn {
-  display: inline-block;
-  padding: 0;
+<style scoped>
+.loginBtn {
+  display: block;
+  width: 80px;
+  padding: 5px;
   margin: 0;
-}
-.non-border {
-  border-style: none;
-}
-.text {
   font-size: 10px;
   font-weight: bold;
-  padding: 0;
-  margin: 0;
+}
+.icon {
+  color: #6c757d;
 }
 </style>

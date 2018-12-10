@@ -1,7 +1,7 @@
 <template>
   <div class = "searchBtn">
     <button
-      class="btn btn-success"
+      class="btn btn-primary"
       type="button"
     >
       <ion-icon name="search"/>

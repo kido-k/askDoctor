@@ -16,7 +16,11 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
+.btn-primary {
+  background: #28c8a0;
+  border: none;
+  color: #fff;
+}
 *,
 *:before,
 *:after {

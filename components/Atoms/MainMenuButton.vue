@@ -1,20 +1,19 @@
 <template>
-  <div class = "loginBtn">
+  <div class = "menuBtn">
     <button
       class="btn btn-outline-secondary non-border"
       type="button"
     >
       <ion-icon
         size="large"
-        name="lock"
-      /><br>
-      <p class="text">ログイン</p>
+        name="menu"/><br>
+      <p class="text">メニュー</p>
     </button>
   </div>
 </template>
 
 <style>
-.loginBtn {
+.menuBtn {
   display: inline-block;
   padding: 0;
   margin: 0;
