@@ -25,8 +25,8 @@
 </template>
 
 <style scoped>
-.site-navi {
-}
+/* .site-navi {
+} */
 </style>
 
 
