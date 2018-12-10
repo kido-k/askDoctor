@@ -1,11 +1,13 @@
 <template>
   <div class = "signUpBtn">
-    <button
-      class="btn btn-danger"
-      type="button"
+    <a
+      href="#"
+      class="abtn btn btn-lg active"
+      role="button"
+      aria-pressed="true"
     >
       今すぐ利用登録
-    </button>
+    </a>
   </div>
 </template>
 
@@ -13,7 +15,9 @@
 .signUpBtn {
   display: block;
 }
-.btn {
+.abtn {
+  background: #fa7864;
+  color: #fff;
   font-size: 1.25rem;
   height: 64px;
   width: 210px;
