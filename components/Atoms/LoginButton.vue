@@ -2,7 +2,8 @@
   <div class="button">
     <button
       type="submit"
-      class="btn btn-primary">ログイン</button>
+      class="btn btn-primary"
+      @click="handleClickSubmit">ログイン</button>
 </div></template>
 
 <style scoped>
@@ -13,3 +14,6 @@
   font-size: 18px;
 }
 </style>
+
+<script>
+</script>

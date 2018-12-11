@@ -21,6 +21,19 @@ html {
   border: none;
   color: #fff;
 }
+
+a {
+  color: #6c757d;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+small {
+  font-size: 0.875rem;
+}
 *,
 *:before,
 *:after {
