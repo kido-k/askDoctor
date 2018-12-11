@@ -1,32 +1,42 @@
-export const state = () => ({
-  isLoggedIn: false,
-  user: null
-})
+import Vuex from 'vuex'
 
-export const getters = {
-  isLoggedIn: state => state.isLoggedIn,
-  user: state => state.user
-}
-
-export const mutations = {
-  setUser(state, { user }) {
-    state.user = user
-    state.isLogggedIn = true
-  }
-}
-
-export const actions = {
-  async login({ commit }, { id }) {
-    const user = await this.$axios.$get(`/users/${id}.json`)
-    if (!user.id) throw new Error('Invalid user')
-    commit('setUser', { user })
-  },
-  async register({ commit }, { id }) {
-    const payload = {}
-    payload[id] = { id }
-    await this.$.axios.$patch(`/users.json, payload`)
-    const user = await this.$axios.$get(`/users/${id}.json`)
-    if (!user.id) throw new Error('Invalid user')
-    commit('setUser', { user })
-  }
-}
+export default () =>
+  new Vuex.Store({
+    state: {
+      items: [],
+      users: {},
+      userItems: {}
+    },
+    getters: {
+      items: state => state.items,
+      users: state => state.users,
+      userItems: state => state.userItems
+    },
+    mutations: {
+      setItems(state, { items }) {
+        state.items = items
+      },
+      setUsers(state, { user }) {
+        state.users[user.id] = user
+      },
+      setUserItems(state, { user, items }) {
+        state.userItems[user.id] = items
+      }
+    },
+    actions: {
+      async fetchItems({ commit }) {
+        const items = await this.$axios.$get(
+          'https://qiita.com/api/v2/items?query=tag:nuxt.js'
+        )
+        commit('setItems', { items })
+      },
+      async fetchUserInfo({ commit }, { id }) {
+        const [user, items] = await Promise.all([
+          this.$axios.$get(`https://qiita.com/api/v2/users/${id}`),
+          this.$axios.$get(`https://qiita.com/api/v2/items?query=user:${id}`)
+        ])
+        commit('setUsers', { user })
+        commit('setUserItems', { user, items })
+      }
+    }
+  })
