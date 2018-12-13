@@ -1,6 +1,9 @@
 <template>
   <div class="FeatureConsultExample">
     <div class="list-group">
+      <button
+        type="button"
+        @click="fetchQAList">+</button>
       <ul>
         <li
           v-for="qa in qalist"
@@ -92,11 +95,14 @@
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
+  async asyncData({ store }) {
+    await store.dispatch('qalist/fetchQAList')
+  },
   computed: {
     ...mapGetters({ qalist: 'qalist/getExamples' })
   },
   methods: {
-    ...mapActions('qalist', ['increment', 'decrement'])
+    ...mapActions('qalist', ['fetchQAList'])
   }
 }
 </script>
