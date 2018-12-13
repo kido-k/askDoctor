@@ -2,10 +2,8 @@ const pkg = require('./package')
 
 module.exports = {
   mode: 'universal',
+  srcDir: 'app',
 
-  /*
-  ** Headers of the page
-  */
   head: {
     title: pkg.name,
     meta: [
@@ -17,40 +15,18 @@ module.exports = {
     script: [{ src: 'https://unpkg.com/ionicons/dist/ionicons.js', body: true }]
   },
 
-  /*
-  ** Customize the progress-bar color
-  */
   loading: { color: '#fff' },
 
-  /*
-  ** Global CSS
-  */
   css: [],
 
-  /*
-  ** Plugins to load before mounting the App
-  */
   plugins: [],
 
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios',
-    // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
-  ],
-  /*
-  ** Axios module configuration
-  */
+  modules: ['@nuxtjs/axios', 'bootstrap-vue/nuxt'],
+
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
+    baseURL: 'https://ask-caremanager.firebaseio.com'
   },
 
-  /*
-  ** Build configuration
-  */
   build: {
     /*
     ** You can extend webpack config here

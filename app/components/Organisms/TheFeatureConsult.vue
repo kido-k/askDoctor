@@ -2,7 +2,7 @@
   <div>
     <div class="feature-search">
       <FeatureConsultTitle class="title"/>
-      <FeatureConsultExample class="btn"/>
+      <FeatureConsultExample class="example"/>
     </div>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
 .title {
   margin: 40px 0 0 0;
 }
-.btn {
+.example {
   margin: 24px 0 0 0;
 }
 </style>
