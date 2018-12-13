@@ -7,7 +7,7 @@
       @click="increment">+</button>
     <button
       type="button"
-      @click="decrement">-</button>
+      @click="clearQA">-</button>
   </div>
 </template>
 
@@ -15,11 +15,14 @@
 import { mapGetters, mapActions } from 'vuex'
 
 export default {
+  async asyncData({ store }) {
+    await store.dispatch('qalist/fetchQAList')
+  },
   computed: {
     ...mapGetters({ qalist: 'qalist/getExamples' })
   },
   methods: {
-    ...mapActions('qalist', ['increment', 'decrement'])
+    ...mapActions('qalist', ['increment', 'clearQA'])
   }
 }
 </script>

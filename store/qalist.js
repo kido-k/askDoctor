@@ -1,23 +1,23 @@
-const state = () => ({
+export const state = () => ({
   examples: [
-    {
-      title: 'コインランドリーの使用で病気感染',
-      author: '20代/女性',
-      posttime: '2017/08/03',
-      body:
-        'コインランドリーで洗濯乾燥した布団を一歳の子供がしゃぶっていました。 布団はほぼ乾いてはいたものの、一部分は若干湿っている状態でした。コインランドリーはいろんな方が利用していると思うので衛生面が心配なのですが、布団をしゃぶったことで病気が移ることはありますか？よろしくお願い致します。(20代/女性)',
-      answer: '7名が回答',
-      category: '赤ちゃん・子供'
-    },
-    {
-      title: '何歳まで産めますか?',
-      author: '40代/女性',
-      posttime: '2018/01/03',
-      body:
-        '私の主人は今年で54歳になります。男性も精子が悪くなると聞いた事があります。私も高齢出産の歳になりますが何歳まで妊娠して産む事が出来ますか?教えて下さい。(40代/女性)',
-      answer: '7名が回答',
-      category: '妊娠・出産'
-    },
+    // {
+    //   title: 'コインランドリーの使用で病気感染',
+    //   author: '20代/女性',
+    //   posttime: '2017/08/03',
+    //   body:
+    //     'コインランドリーで洗濯乾燥した布団を一歳の子供がしゃぶっていました。 布団はほぼ乾いてはいたものの、一部分は若干湿っている状態でした。コインランドリーはいろんな方が利用していると思うので衛生面が心配なのですが、布団をしゃぶったことで病気が移ることはありますか？よろしくお願い致します。(20代/女性)',
+    //   answer: '7名が回答',
+    //   category: '赤ちゃん・子供'
+    // },
+    // {
+    //   title: '何歳まで産めますか?',
+    //   author: '40代/女性',
+    //   posttime: '2018/01/03',
+    //   body:
+    //     '私の主人は今年で54歳になります。男性も精子が悪くなると聞いた事があります。私も高齢出産の歳になりますが何歳まで妊娠して産む事が出来ますか?教えて下さい。(40代/女性)',
+    //   answer: '7名が回答',
+    //   category: '妊娠・出産'
+    // },
     {
       title: '胃炎からスキルス胃がんの可能性?',
       author: '30代/女性',
@@ -30,31 +30,38 @@ const state = () => ({
   ]
 })
 
-const getters = {
+export const getters = {
   getExamples: state => state.examples
 }
 
-const mutations = {
-  increment(state) {
-    state.example++
+export const mutations = {
+  addQA(state, { example }) {
+    state.examples.push(example)
   },
-  decrement(state) {
-    state.example--
+  updateQA(state, { example }) {
+    state.examples = state.examples.map(
+      p => (p.id === example.id ? example : p)
+    )
+  },
+  clearQA(state) {
+    state.examples = []
   }
 }
 
-const actions = {
-  increment({ commit }) {
-    commit('increment')
-  },
-  decrement({ commit }) {
-    commit('decrement')
+export const actions = {
+  async fetchQAList({ commit }) {
+    const examples = await this.$axios.$get(`/qalist.json`)
+    console.log(examples)
+    commit('clearQA')
+    Object.entries(examples)
+      .reverse()
+      .forEach(([id, content]) =>
+        commit('addQA', {
+          example: {
+            id,
+            ...content
+          }
+        })
+      )
   }
-}
-
-module.exports = {
-  state,
-  getters,
-  mutations,
-  actions
 }
