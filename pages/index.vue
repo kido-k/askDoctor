@@ -58,14 +58,10 @@ export default {
 
 <style>
 .container {
-  /* width: 100%; */
   margin: 0px;
   padding: 0px;
   text-align: center;
 }
-/* .header {
-  width: 100%;
-} */
 .middlecontent {
   background-color: #f0fafa;
   margin: 40px 0 0 0;
