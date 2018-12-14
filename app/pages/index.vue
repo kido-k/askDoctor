@@ -40,6 +40,7 @@ import FeatureWord from '~/components/Organisms/TheFeatureWord.vue'
 import FeatureConsult from '~/components/Organisms/TheFeatureConsult.vue'
 import AskCategory from '~/components/Organisms/TheAskCategory.vue'
 import Footer from '~/components/Organisms/TheFooter.vue'
+import { mapGetters, mapActions } from 'vuex'
 
 export default {
   components: {
@@ -52,6 +53,10 @@ export default {
     FeatureConsult,
     AskCategory,
     Footer
+  },
+
+  async asyncData({ store }) {
+    await store.dispatch('qalist/fetchQAList')
   }
 }
 </script>
