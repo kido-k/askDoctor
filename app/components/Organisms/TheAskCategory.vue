@@ -34,8 +34,6 @@ export default {
 <style scoped>
 .category {
   display: block;
-  min-width: 1040px;
-  max-width: 1040px;
   padding: 0 0 80px 0;
   margin: 0;
   box-sizing: inherit;
@@ -47,7 +45,8 @@ export default {
   text-align: center;
 }
 .category-card {
-  margin: 10px 2% 0 0;
+  justify-content: center;
+  margin: 10px 0 0 0;
 }
 .left {
   min-height: 262px;
@@ -62,13 +61,9 @@ export default {
   margin: 0 2% 0 0;
 }
 .all-category-btn {
-  min-width: 1040px;
-  max-width: 1040px;
   margin: 40px 0 0 0;
 }
 .signup-btn {
-  min-width: 1040px;
-  max-width: 1040px;
   margin: 40px 0 0 0;
 }
 </style>

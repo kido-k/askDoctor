@@ -51,17 +51,14 @@ export const mutations = {
 export const actions = {
   async fetchQAList({ commit }) {
     const examples = await this.$axios.$get(`/qalist.json`)
-    console.log(examples)
     commit('clearQA')
-    Object.entries(examples)
-      .reverse()
-      .forEach(([id, content]) =>
-        commit('addQA', {
-          example: {
-            id,
-            ...content
-          }
-        })
-      )
+    Object.entries(examples).forEach(([id, content]) =>
+      commit('addQA', {
+        example: {
+          id,
+          ...content
+        }
+      })
+    )
   }
 }

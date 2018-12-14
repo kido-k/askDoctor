@@ -29,15 +29,11 @@ export default {
 
 <style scoped>
 .pdca {
-  min-width: 1040px;
-  max-width: 1040px;
   margin: 0 auto;
   box-sizing: inherit;
   background-repeat: no-repeat;
 }
 .signup-btn {
-  min-width: 1040px;
-  max-width: 1040px;
   margin: 40px 0 0 0;
 }
 </style>

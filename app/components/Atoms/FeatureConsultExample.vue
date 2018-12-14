@@ -1,9 +1,6 @@
 <template>
   <div class="FeatureConsultExample">
     <div class="list-group">
-      <button
-        type="button"
-        @click="fetchQAList">+</button>
       <ul>
         <li
           v-for="qa in qalist"
@@ -100,9 +97,6 @@ export default {
   },
   computed: {
     ...mapGetters({ qalist: 'qalist/getExamples' })
-  },
-  methods: {
-    ...mapActions('qalist', ['fetchQAList'])
   }
 }
 </script>

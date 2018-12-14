@@ -21,14 +21,13 @@ export default {
 
 <style scoped>
 .feature-search {
-  min-width: 1040px;
-  max-width: 1040px;
   margin: 0;
 }
 .title {
   margin: 40px 0 0 0;
 }
 .example {
+  width: 98%;
   margin: 24px 0 0 0;
 }
 </style>

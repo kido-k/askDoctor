@@ -20,8 +20,6 @@ export default {
 <style>
 .middle {
   display: flex;
-  min-width: 1040px;
-  max-width: 1040px;
   margin: 0 auto;
   box-sizing: inherit;
   background-repeat: no-repeat;
