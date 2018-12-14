@@ -21,8 +21,6 @@ export default {
 
 <style scoped>
 .feature-search {
-  min-width: 1040px;
-  max-width: 1040px;
   margin: 0;
 }
 .title {

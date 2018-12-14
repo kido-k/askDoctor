@@ -8,10 +8,6 @@
 </template>
 
 <style scoped>
-/* .email-input {
-}
-.label {
-} */
 .input {
   margin: 10px 15px;
 }

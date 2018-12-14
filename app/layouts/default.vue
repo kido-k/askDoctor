@@ -17,6 +17,10 @@ html {
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 100%;
+}
+
 .btn-primary {
   background: #28c8a0;
   border: none;

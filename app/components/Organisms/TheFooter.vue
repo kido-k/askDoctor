@@ -25,15 +25,17 @@ export default {
   padding: 0 0 20px 0;
   border-top: 5px solid #28c8a0;
   background: #ebf5f5;
-  text-align: center;
 }
 .site-navi {
   margin: 40px 0 0 0;
+  justify-content: center;
 }
 .group-site {
   margin: 40px 0 0 0;
+  justify-content: center;
 }
 .copy-right {
   margin: 20px 0 0 0;
+  justify-content: center;
 }
 </style>
