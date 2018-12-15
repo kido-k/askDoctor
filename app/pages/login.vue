@@ -1,16 +1,15 @@
 <template>
-  <section class="container">
+  <div class="main">
     <div class="header">
       <Header/>
     </div>
-    <div>
+    <div class="login-form">
       <LoginForm/>
     </div>
     <div class="">
       <Footer/>
     </div>
-
-  </section>
+  </div>
 </template>
 
 <script>
@@ -27,34 +26,14 @@ export default {
 }
 </script>
 
-<style>
-.container {
-  /* width: 100%; */
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
+<style scoped>
+.main {
+  margin: auto;
+  justify-content: center;
 }
-/* .header {
-  width: 100%;
-} */
-.middlecontent {
-  background-color: #f0fafa;
-  margin: 40px 0 0 0;
-  padding: 40px 0;
-}
-.pdca {
-  margin: 40px 0 0 0;
-}
-.feature-word {
-  padding: 30px 0 0 0;
-  margin: 0 0 0 0;
-}
-.feature-consult {
-  padding: 30px 0 0 0;
-  margin: 0 0 0 0;
-}
-.ask-category {
-  margin: 0px;
+.login-form {
+  width: 50%;
+  margin: 0 0 0 25%;
   padding: 0px;
 }
 </style>

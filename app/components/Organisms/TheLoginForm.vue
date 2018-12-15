@@ -1,8 +1,8 @@
 <template>
   <div class="login-panel">
-    <LoginFromTitle class="title"/>
+    <!-- <LoginFromTitle class="title"/> -->
     <div class="">
-      <EmailImput class="email"/>
+      <LoginIdImput class="id"/>
       <PasswordImput class="password"/>
     </div>
     <div>
@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import LoginFromTitle from '../Atoms/LoginFromTitle.vue'
-import EmailImput from '../Molecules/EmailImput.vue'
+// import LoginFromTitle from '../Atoms/LoginFromTitle.vue'
+import LoginIdImput from '../Molecules/LoginIdImput.vue'
 import PasswordImput from '../Molecules/PasswordImput.vue'
 import AutoLoginCheck from '../Molecules/AutoLoginCheck.vue'
 import LoginButton from '../Atoms/LoginButton.vue'
@@ -27,8 +27,8 @@ import ForgetPasswordLink from '../Atoms/ForgetPasswordLink.vue'
 
 export default {
   components: {
-    LoginFromTitle,
-    EmailImput,
+    // LoginFromTitle,
+    LoginIdImput,
     PasswordImput,
     AutoLoginCheck,
     LoginButton,
@@ -49,7 +49,7 @@ export default {
   margin: 40px 0 0 0;
   text-align: center;
 }
-.email {
+.id {
   margin: 8px 0 0 0;
 }
 .password {
@@ -59,7 +59,6 @@ export default {
   margin: 24px 0 0 0;
 }
 .login-btn {
-  width: 100%;
   margin: 24px 0 0 0;
 }
 .forget-btn {

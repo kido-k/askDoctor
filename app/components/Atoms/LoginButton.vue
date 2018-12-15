@@ -8,6 +8,7 @@
 
 <style scoped>
 .button {
+  text-align: center;
   display: block;
 }
 .button > button {
