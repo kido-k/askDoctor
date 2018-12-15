@@ -1,13 +1,9 @@
 <template>
   <div class = "signUpBtn">
-    <a
-      href="/new_register"
+    <button
+      type="submit"
       class="abtn btn btn-lg active"
-      role="button"
-      aria-pressed="true"
-    >
-      今すぐ利用登録
-    </a>
+      @click="handleClickSubmit">登録する</button>
   </div>
 </template>
 
