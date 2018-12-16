@@ -6,6 +6,7 @@
 
 <style scoped>
 .copy-right {
+  text-align: center;
   display: block;
   padding: 0;
   margin: 0;

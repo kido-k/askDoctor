@@ -6,7 +6,7 @@
     <div class="register-form">
       <RegisterForm/>
     </div>
-    <div class="">
+    <div class="footer-form">
       <Footer/>
     </div>
   </div>
@@ -33,7 +33,11 @@ export default {
 }
 .register-form {
   width: 50%;
-  margin: 0 0 0 25%;
+  margin: 40px 0 0 25%;
+  padding: 0px;
+}
+.footer-form {
+  margin: 0 0 40px 0;
   padding: 0px;
 }
 </style>
