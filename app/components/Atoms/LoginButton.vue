@@ -12,6 +12,8 @@
   display: block;
 }
 .button > button {
+  width: 210px;
+  height: 64px;
   font-size: 18px;
 }
 </style>

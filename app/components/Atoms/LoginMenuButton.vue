@@ -2,7 +2,7 @@
   <div class = "loginBtn">
     <a
       href="/login"
-      class="icon "
+      class="btn login btn-outline-secondary"
       role="button"
       aria-pressed="true">
       <ion-icon
@@ -16,14 +16,16 @@
 
 <style scoped>
 .loginBtn {
+  text-align: center;
   display: block;
   width: 80px;
-  padding: 5px;
   margin: 0;
+}
+.login {
+  border-style: none;
+  padding: 0 5px;
   font-size: 10px;
   font-weight: bold;
-}
-.icon {
-  color: #6c757d;
+  text-align: center;
 }
 </style>

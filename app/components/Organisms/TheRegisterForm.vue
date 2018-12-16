@@ -44,7 +44,7 @@ export default {
   margin: 8px 0 0 0;
 }
 .signUp-btn {
-  margin: 24px 0 0 0;
+  margin: 50px 0 40px 0;
   text-align: center;
 }
 </style>

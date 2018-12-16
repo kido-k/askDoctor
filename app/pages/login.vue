@@ -33,7 +33,7 @@ export default {
 }
 .login-form {
   width: 50%;
-  margin: 0 0 0 25%;
+  margin: 40px 0 0 25%;
   padding: 0px;
 }
 </style>
