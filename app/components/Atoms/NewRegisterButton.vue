@@ -3,7 +3,7 @@
     <button
       type="submit"
       class="abtn btn btn-lg active"
-      @click="handleClickSubmit">登録する</button>
+      @click="newRegister">登録する</button>
   </div>
 </template>
 
@@ -21,3 +21,34 @@
   margin: 0;
 }
 </style>
+
+<script>
+export default {
+  asyncData({ redirect, store }) {
+    if (!store.getters['user']) {
+      redirect('/')
+    }
+    return {
+      formData: {
+        title: '',
+        body: ''
+      }
+    }
+  },
+  computed: {
+    ...mapGetters(['user'])
+  },
+  methods: {
+    async publish() {
+      const payload = {
+        user: this.user,
+        ...this.formData
+      }
+      await this.publishPost({ payload })
+      this.$router.push('/posts')
+    },
+    ...mapActions('users', ['updateUser']),
+    ...mapActions('posts', ['publishPost'])
+  }
+}
+</script>
