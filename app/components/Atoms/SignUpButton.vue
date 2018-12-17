@@ -1,7 +1,7 @@
 <template>
   <div class = "signUpBtn">
     <a
-      href="#"
+      href="/new_register"
       class="abtn btn btn-lg active"
       role="button"
       aria-pressed="true"

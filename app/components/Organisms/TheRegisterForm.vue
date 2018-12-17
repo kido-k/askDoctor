@@ -1,44 +1,32 @@
 <template>
-  <div class="login-panel">
+  <div class="signUp-panel">
     <!-- <LoginFromTitle class="title"/> -->
     <div class="">
       <LoginIdImput class="id"/>
       <PasswordImput class="password"/>
     </div>
     <div>
-      <AutoLoginCheck class="chk-box"/>
-    </div>
-    <div>
-      <LoginButton class="login-btn"/>
-    </div>
-    <div>
-      <ForgetPasswordLink class="forget-btn"/>
+      <SignUpButton class="signUp-btn"/>
     </div>
   </div>
 </template>
 
 <script>
-// import LoginFromTitle from '../Atoms/LoginFromTitle.vue'
 import LoginIdImput from '../Molecules/LoginIdImput.vue'
 import PasswordImput from '../Molecules/PasswordImput.vue'
-import AutoLoginCheck from '../Molecules/AutoLoginCheck.vue'
-import LoginButton from '../Atoms/LoginButton.vue'
-import ForgetPasswordLink from '../Atoms/ForgetPasswordLink.vue'
+import SignUpButton from '../Atoms/SignUpButton.vue'
 
 export default {
   components: {
-    // LoginFromTitle,
     LoginIdImput,
     PasswordImput,
-    AutoLoginCheck,
-    LoginButton,
-    ForgetPasswordLink
+    SignUpButton
   }
 }
 </script>
 
 <style scoped>
-.login-panel {
+.signUp-panel {
   display: inline-block;
   width: 100%;
   padding: 16px;
@@ -55,13 +43,8 @@ export default {
 .password {
   margin: 8px 0 0 0;
 }
-.chk-box {
-  margin: 24px 0 0 0;
-}
-.login-btn {
-  margin: 24px 0 0 0;
-}
-.forget-btn {
-  margin: 24px 0 0 0;
+.signUp-btn {
+  margin: 50px 0 40px 0;
+  text-align: center;
 }
 </style>

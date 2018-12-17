@@ -19,8 +19,10 @@
 </template>
 
 <style scoped>
-.site-navi {
+.group-site {
   text-align: center;
+}
+.site-navi {
   margin: 5px 0 0 0;
 }
 </style>

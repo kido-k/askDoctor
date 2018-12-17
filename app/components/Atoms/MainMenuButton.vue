@@ -20,6 +20,7 @@
 }
 .non-border {
   border-style: none;
+  padding: 0 5px;
 }
 .text {
   font-size: 10px;
