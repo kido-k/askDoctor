@@ -14,8 +14,8 @@
 </style>
 
 <script>
-import LoginEmailLabel from '~/components/atoms/LoginEmailLabel.vue'
-import LoginEmailInputBox from '~/components/atoms/LoginEmailInputBox.vue'
+import LoginEmailLabel from '~/components/Atoms/LoginEmailLabel.vue'
+import LoginEmailInputBox from '~/components/Atoms/LoginEmailInputBox.vue'
 
 export default {
   components: {

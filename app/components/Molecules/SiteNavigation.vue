@@ -31,13 +31,13 @@
 
 
 <script>
-import LinkDoctor from '~/components/atoms/LinkDoctor.vue'
-import LinkHelp from '~/components/atoms/LinkHelp.vue'
-import LinkTermSevice from '~/components/atoms/LinkTermSevice.vue'
-import LinkGuidePersonalData from '~/components/atoms/LinkGuidePersonalData.vue'
-import LinkGuideSpecifiedCommercial from '~/components/atoms/LinkGuideSpecifiedCommercial.vue'
-import LinkThisCompany from '~/components/atoms/LinkThisCompany.vue'
-import LinkSiteMap from '~/components/atoms/LinkSiteMap.vue'
+import LinkDoctor from '~/components/Atoms/LinkDoctor.vue'
+import LinkHelp from '~/components/Atoms/LinkHelp.vue'
+import LinkTermSevice from '~/components/Atoms/LinkTermSevice.vue'
+import LinkGuidePersonalData from '~/components/Atoms/LinkGuidePersonalData.vue'
+import LinkGuideSpecifiedCommercial from '~/components/Atoms/LinkGuideSpecifiedCommercial.vue'
+import LinkThisCompany from '~/components/Atoms/LinkThisCompany.vue'
+import LinkSiteMap from '~/components/Atoms/LinkSiteMap.vue'
 
 export default {
   components: {

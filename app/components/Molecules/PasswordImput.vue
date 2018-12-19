@@ -19,8 +19,8 @@
 
 
 <script>
-import LoginPasswordLabel from '~/components/atoms/LoginPasswordLabel.vue'
-import LoginPasswordInputBox from '~/components/atoms/LoginPasswordInputBox.vue'
+import LoginPasswordLabel from '~/components/Atoms/LoginPasswordLabel.vue'
+import LoginPasswordInputBox from '~/components/Atoms/LoginPasswordInputBox.vue'
 
 export default {
   components: {

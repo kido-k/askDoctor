@@ -15,8 +15,8 @@
 
 
 <script>
-import SearchButton from '~/components/atoms/SearchButton.vue'
-import SearchInputBox from '~/components/atoms/SearchInputBox.vue'
+import SearchButton from '~/components/Atoms/SearchButton.vue'
+import SearchInputBox from '~/components/Atoms/SearchInputBox.vue'
 
 export default {
   components: {

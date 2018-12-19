@@ -19,8 +19,8 @@
 
 
 <script>
-import AskDoctorLabel1 from '~/components/atoms/AskDoctorLabel1.vue'
-import SignUpButton from '~/components/atoms/SignUpButton.vue'
+import AskDoctorLabel1 from '~/components/Atoms/AskDoctorLabel1.vue'
+import SignUpButton from '~/components/Atoms/SignUpButton.vue'
 
 export default {
   components: {

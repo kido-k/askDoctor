@@ -29,8 +29,8 @@
 
 
 <script>
-import GroupSiteTitle from '~/components/atoms/GroupSiteTitle.vue'
-import GroupSiteLink from '~/components/atoms/GroupSiteLink.vue'
+import GroupSiteTitle from '~/components/Atoms/GroupSiteTitle.vue'
+import GroupSiteLink from '~/components/Atoms/GroupSiteLink.vue'
 
 export default {
   components: {

@@ -20,7 +20,7 @@
 </style>
 
 <script>
-import LoginCheckBox from '~/components/atoms/LoginCheckBox.vue'
+import LoginCheckBox from '~/components/Atoms/LoginCheckBox.vue'
 
 export default {
   components: {

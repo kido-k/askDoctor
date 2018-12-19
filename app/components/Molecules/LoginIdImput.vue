@@ -14,8 +14,8 @@
 </style>
 
 <script>
-import LoginIdLabel from '~/components/atoms/LoginIdLabel.vue'
-import LoginIdInputBox from '~/components/atoms/LoginIdInputBox.vue'
+import LoginIdLabel from '~/components/Atoms/LoginIdLabel.vue'
+import LoginIdInputBox from '~/components/Atoms/LoginIdInputBox.vue'
 
 export default {
   components: {

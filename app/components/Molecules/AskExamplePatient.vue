@@ -24,9 +24,9 @@
 
 
 <script>
-import MidleTitle from '~/components/atoms/AskDoctorMiddleTitle2.vue'
-import MidleLabel from '~/components/atoms/AskDoctorMiddleLabel2.vue'
-import MidlePicture from '~/components/atoms/AskDoctorMiddlePicture2.vue'
+import MidleTitle from '~/components/Atoms/AskDoctorMiddleTitle2.vue'
+import MidleLabel from '~/components/Atoms/AskDoctorMiddleLabel2.vue'
+import MidlePicture from '~/components/Atoms/AskDoctorMiddlePicture2.vue'
 
 export default {
   components: {
